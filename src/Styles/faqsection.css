@@ -1,0 +1,243 @@
+/* General styles */
+.faq-section {
+  width: 100%;
+  height: auto;
+  padding: 115px 104px 115px 104px;
+  background-color: #151515;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.faq-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq-inputs {
+  width: 490px;
+  height: 388px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.faq-inputs form span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.faq-inputs h2 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48.41px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.faq-inputs input,
+.faq-inputs textarea {
+  display: block;
+  width: 100%;
+
+  padding: 1rem;
+  border-radius: 14px;
+  border: 1px solid #ffffff0d;
+  background-color: #2b2b2b;
+  color: white;
+  margin-top: 8px;
+}
+
+.faq-submit-btn {
+  width: 126px;
+  height: 54px;
+  padding: 16px 40px 16px 40px;
+  gap: 10px;
+  border-radius: 48px;
+  background-color: #61399f;
+  box-shadow: 0px 12px 25px -10px #61399f4d;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.78px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 1.5rem;
+}
+
+.faq-accordion {
+  width: 640px;
+  height: 360px;
+  gap: 24px;
+  color: #ffffff;
+}
+
+.faq-item {
+  padding: 1rem;
+
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ffffff0f;
+  cursor: pointer;
+}
+
+.faq-item h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24.2px;
+  text-align: left;
+  color: #ffffff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq-item p {
+  margin-top: 1rem;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: #fefefea5;
+}
+
+/* Contact form styles */
+.contact-form-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-form-container form {
+  width: 724px;
+  height: auto;
+  padding: 32px;
+  gap: 32px;
+  border-radius: 24px;
+  border: 1px solid #ffffff1a;
+  box-shadow: 0px 1px 4px 0px #10182821;
+  background: #ffffff0d;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  color: white;
+}
+
+.contact-form-container form input,
+.contact-form-container form textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #2b2b2b;
+  color: white;
+}
+
+.contact-form-container form .checkbox-group {
+  width: 100%;
+  display: flex;
+  gap: 35px;
+}
+.checkbox-group .checkbox-input {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.check-input {
+  width: 100%;
+  height: 19px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.check-input input[type="checkbox"] {
+  margin: 0px;
+  width: 16.8px;
+  height: 16.8px;
+  background-color: #ffffff33;
+  border: 1px solid #ffffff33;
+}
+
+.contact-form-container form .submit-btn {
+  width: 255px;
+  height: 54px;
+  padding: 16px 64px 16px 64px;
+  border-radius: 48px;
+  background: #61399f;
+  box-shadow: 0px 12px 25px -10px #61399f4d;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.78px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #ffffff;
+}
+
+.error {
+  color: #ff3838;
+}
+
+.contact-left {
+  width: 457px;
+  height: 507px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.contact-left h2 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48.41px;
+  text-align: left;
+  color: #ffffff;
+}
+.contact-left p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  color: #ffffff99;
+}
+.contact-left .send-email {
+  border-top: 1px solid #ffffff1a;
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+}
+.contact-left .send-email h5 {
+  font-weight: 700;
+  line-height: 24.2px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.contact-left .send-email p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24.2px;
+  text-align: left;
+  color: #ffffff99;
+}
+.contact-left .send-email span {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.78px;
+  text-align: left;
+
+  color: #61399f;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .faq-section {
+    flex-direction: column;
+  }
+}

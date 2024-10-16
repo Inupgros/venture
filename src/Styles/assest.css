@@ -1,0 +1,454 @@
+.asset-section {
+  width: 100%;
+  height: auto;
+  padding: 115px 104px 100px 104px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.investment-strategies {
+  width: 100%;
+  display: flex;
+  gap: 90px;
+  align-items: center;
+}
+
+.total-investment-chart {
+  width: 588px;
+  height: 485px;
+  border-radius: 16px;
+  background-color: #f1f3f30d;
+  position: relative;
+}
+
+.investment-chart {
+  width: 480px;
+  height: 401px;
+  gap: 4px;
+  margin: 80px auto 0px auto;
+  border-radius: 20px 20px 0px 0px;
+  background: #ffffff0d;
+  box-shadow: 0px 20px 34px 0px #00000040;
+}
+.investment-chart-info {
+  color: white;
+}
+.invesst-chart-growth {
+  width: fit-content;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 8px 2px 8px;
+  border-radius: 5px;
+  background-color: #1ad59833;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 12px;
+  color: #1ad598;
+}
+
+.investment-all-stats {
+  position: absolute;
+  width: 175px;
+  height: 190px;
+  border-radius: 16px;
+  color: #00000040;
+  box-shadow: -6px 14px 74px 0px #00000040;
+  right: 28px;
+  top: 32px;
+  z-index: 999;
+  background-color: #2c2d2d;
+}
+.investment-all-stats h6 {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #ffffff80;
+}
+
+/* Pie Graph Styling */
+.circle-container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.8; /* Slight transparency */
+}
+
+.mutual-funds {
+  width: 102px;
+  height: 99px;
+  background-color: #5f389b; /* Green */
+}
+
+.sips {
+  width: 74px;
+  height: 70px;
+  background-color: #22d497; /* Orange */
+}
+
+.stocks {
+  width: 48px;
+  height: 48px;
+  background-color: #ff7f5c; /* Purple */
+}
+
+.inner-circle {
+  width: 20px; /* Inner circle size */
+  height: 20px;
+  background-color: white; /* Inner circle color */
+  border-radius: 50%;
+  position: absolute;
+}
+
+.legend {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 20px;
+}
+
+.legend p {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  color: #ffffff80;
+  gap: 2px;
+}
+
+.legend p span {
+  font-size: 8px;
+}
+.stocks-legend span {
+  color: #5f389b;
+}
+
+.sips-legend span {
+  color: #22d497;
+}
+
+.mutual-funds-legend span {
+  color: #ff7f5c;
+}
+
+.strategies {
+  width: 551px;
+  height: 303px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.strategies h1 {
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48.41px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.strategies p {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: justify;
+  color: #ffffffb2;
+}
+
+.allocation-strategies {
+  width: 100%;
+  display: flex;
+  gap: 90px;
+  align-items: center;
+  color: #ffffff;
+}
+
+.allocation-chart-wrap {
+  max-width: 588px;
+  height: 485px;
+  border-radius: 16px;
+  background-color: #f1f3f30d;
+  padding: 24px;
+  position: relative;
+}
+
+.allocation-chart {
+  width: 100%;
+  height: 288.38px;
+  padding: 24px 36px 24px 36px;
+  border-radius: 16px;
+  background: #ffffff0d;
+  box-shadow: 0px 1px 4px 0px #10182821;
+}
+
+.chart-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.investment-amount {
+  width: 530px;
+  height: 122px;
+  border-radius: 16px;
+  background-color: #61399f;
+  background-image: url(" /Images/hero-Background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+.investment-amount .amount {
+  width: 126px;
+  height: 38px;
+  padding: 12px 32px 12px 32px;
+  gap: 10px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  color: #61399f;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 14px;
+}
+
+.invested-amount1 {
+  position: absolute;
+  top: 64px;
+  right: -105px;
+  width: 279px;
+  height: 85px;
+  padding: 15px 19px 15px 19px;
+  gap: 16px;
+  border-radius: 16px;
+  background-color: #2c2d2d;
+  box-shadow: -16px 24px 74px 0px #00000040;
+  box-shadow: -16px 34px 74px 0px #00000059;
+  color: #ffffff;
+}
+
+.invested-amount2 {
+  position: absolute;
+  top: 255px;
+  left: -30px;
+  width: 279px;
+  height: 85px;
+  padding: 15px 19px 15px 19px;
+  gap: 16px;
+  border-radius: 16px;
+  background-color: #2c2d2d;
+  box-shadow: -16px 24px 74px 0px #00000040;
+  box-shadow: -16px 34px 74px 0px #00000059;
+  color: #ffffff;
+}
+.invested-amount div {
+  width: fit-content;
+  height: 26px;
+  padding: 6px 12px 6px 12px;
+  border-radius: 30px;
+  background-color: #ffffff1a;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #ffffff;
+}
+
+.invested-amount span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #ffffff7d;
+}
+
+.tax-planning {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  color: #ffffff;
+}
+
+.tax-content {
+  width: 601px;
+  height: 685.81px;
+  padding: 40px 40px 0px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  border-radius: 32px;
+  background-color: #f1f3f30d;
+  position: relative;
+}
+
+.tax-saving-container {
+  overflow: hidden;
+  overflow-y: scroll;
+  margin: 33px auto 0px auto;
+  width: 458px;
+  height: 344px;
+  padding: 35px;
+  border-radius: 16px 16px 0px 0px;
+  background: #ffffff0d;
+  box-shadow: 0px 20px 34px 0px #00000040;
+}
+
+.tax-saving-container::-webkit-scrollbar {
+  display: none;
+}
+
+.tax-saving-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #ffffff1a;
+}
+
+.tax-saving-wrap h6 {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24.2px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.tax-saving-wrap span {
+  font-family: Inter;
+  font-size: 15.7px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: left;
+  color: #ffffff80;
+  margin-top: 4px;
+}
+
+.tax-profit {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.tax-profit span {
+  font-size: 19px;
+  color: #1ad598;
+  margin-top: -5px;
+}
+.tax-harvesting-list {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  margin-top: 10px;
+}
+
+.tax-harvesting-list::-webkit-scrollbar {
+  display: none;
+}
+
+.tax-harvesting-list .tax-harvesting-progress .harvesting-img {
+  width: 58px;
+  height: 58px;
+}
+.tax-harvesting-list .tax-harvesting-progress .harvesting-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tax-harvesting-list .tax-harvesting-progress h6 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tax-harvest-chart {
+  position: relative;
+  margin: 0px auto 0px auto;
+  width: 450.52px;
+  height: 270.08px;
+  border-radius: 16px;
+  background-color: #ffffff0d;
+  box-shadow: 0px 20px 34px 0px #0000001a;
+}
+.harvest-chart {
+  position: absolute;
+  width: 118.57px;
+  height: 109.3px;
+  left: 367.95px;
+  border-radius: 16px;
+  right: 0px;
+  top: -30px;
+  border-radius: 16px;
+  background-color: #2c2d2d;
+}
+
+.harvest-chart-grow {
+  width: fit-content;
+  height: 19.94px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 1px 6.65px 1.66px 6.65px;
+  border-radius: 4.16px;
+  background-color: #43bd1e33;
+  font-family: Proxima Nova;
+  font-size: 11.63px;
+  font-weight: 700;
+  line-height: 14.13px;
+  color: #43bd1e;
+}
+
+.highlighter-tab {
+  width: fit-content;
+  height: 39px;
+  display: inline;
+  padding: 8px 16px 8px 16px;
+  border-radius: 100px;
+  border: 1px solid linear-gradient(102.52deg, #2389e7 25.45%, #0a0a3b 92.58%);
+  background-color: linear-gradient(102.52deg, #2389e7 25.45%, #0a0a3b 92.58%);
+  box-shadow: 0px 1px 15px 0px #2389e742;
+  color: #2389e7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .asset-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .asset-card-image {
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr); /* For larger screens */
+  }
+}
