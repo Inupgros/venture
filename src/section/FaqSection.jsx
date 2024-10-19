@@ -8,33 +8,58 @@ const FaqSection = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
+
+  const {
+    register: registerForm1,
+    handleSubmit: handleSubmitForm1,
+    formState: { errors: errorsForm1 },
+  } = useForm();
+
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbxRPx0BfhmuedNUtX6LXCAaU0p3WjRBJ6tKwfJVi0FEigYiXqbq6KV0X1UBruSmJitL1w/exec";
+
+  const fqqUrl =
+    "https://script.google.com/macros/s/AKfycby8k4LU6--h5bQlSzialYX2AjuNs0ptuenrMzhZmlF2CN789gu83tAzFVngwCJJUiyY/exec";
+
+  const onSubmit = (data) => {
+    const formData = new FormData();
+    formData.append("fullName", data.fullName);
+    formData.append("email", data.email);
+    formData.append("message", data.message);
+    formData.append("services", data.services.join(", ")); // Concatenate checkbox values
+
+    fetch(scriptURL, {
+      method: "POST",
+      mode: "no-cors", // Adding no-cors mode
+      body: formData,
+    })
+      .then(() => {
+        alert("Thank you! Your form has been submitted successfully.");
+        // Note: With 'no-cors' mode, you won't get a proper response or errors
+      })
+      .catch((error) => console.error("Error!", error.message));
+  };
+
+  const onSubmitFaq = (data) => {
+    const formData = new FormData();
+    formData.append("faqEmail", data.faqEmail);
+    formData.append("faqMessage", data.faqMessage);
+
+    fetch(fqqUrl, {
+      method: "POST",
+      mode: "no-cors",
+      body: formData,
+    })
+      .then(() => {
+        alert("FAQ submitted successfully.");
+      })
+      .catch((error) => console.error("Error!", error.message));
+  };
+
   const [faqIndex, setFaqIndex] = useState(null);
 
   const toggleFaq = (index) => {
     setFaqIndex(faqIndex === index ? null : index);
-  };
-
-  // Using Fetch to submit form data to Google Sheets
-  const onSubmit = async (data) => {
-    const scriptURL =
-      "https://script.google.com/macros/s/AKfycbw0uJm1G3U0J5JAcsNDDcCl5Epf54Lokl6lTWhEoEGJfd9JlZNR0SK1TJD0eVMSkHE/exec";
-
-    try {
-      const response = await fetch(scriptURL, {
-        method: "POST",
-        body: JSON.stringify(data),
-        headers: {
-          "Content-Type": "application/json",
-        },
-        mode: "no-cors", // This will prevent CORS errors, but you can't access the response
-      });
-
-      console.log("Form Data Submitted:", data);
-      alert("Your message has been sent!");
-    } catch (error) {
-      console.error("Error:", error);
-      alert("An error occurred while submitting the form.");
-    }
   };
 
   return (
@@ -42,12 +67,12 @@ const FaqSection = () => {
       <div className="faq-container">
         <div className="faq-inputs">
           <h2>FAQs</h2>
-          <form onSubmit={handleSubmit(onSubmit)}>
+          <form onSubmit={handleSubmitForm1(onSubmitFaq)}>
             <div className="d-flex flex-column gap-2">
               <input
                 type="email"
                 placeholder="Enter your email address"
-                {...register("faqEmail", {
+                {...registerForm1("faqEmail", {
                   required: "Email is required",
                   pattern: {
                     value: /\S+@\S+\.\S+/,
@@ -55,18 +80,18 @@ const FaqSection = () => {
                   },
                 })}
               />
-              {errors.faqEmail && (
-                <span className="error">{errors.faqEmail.message}</span>
+              {errorsForm1.faqEmail && (
+                <span className="error">{errorsForm1.faqEmail.message}</span>
               )}
 
               <textarea
                 placeholder="Ask us what you want to know..."
-                {...register("faqMessage", {
+                {...registerForm1("faqMessage", {
                   required: "Message is required",
                 })}
               />
-              {errors.faqMessage && (
-                <span className="error">{errors.faqMessage.message}</span>
+              {errorsForm1.faqMessage && (
+                <span className="error">{errorsForm1.faqMessage.message}</span>
               )}
 
               <span>
@@ -161,6 +186,7 @@ const FaqSection = () => {
               <p className="error">{errors.fullName.message}</p>
             )}
           </div>
+
           <div>
             <label htmlFor="email">Email address</label>
             <input
@@ -176,6 +202,7 @@ const FaqSection = () => {
             />
             {errors.email && <p className="error">{errors.email.message}</p>}
           </div>
+
           <div>
             <label htmlFor="message">Leave us a message</label>
             <textarea
@@ -188,51 +215,33 @@ const FaqSection = () => {
           </div>
 
           <h5>How can we help you?</h5>
-
           <div className="checkbox-group">
-            <div className="checkbox-input">
-              <div className="check-input">
-                <input type="checkbox" value="Insurance" />
-                <label htmlFor="">Insurance</label>
-              </div>
-              <div className="check-input">
-                <input type="checkbox" value="Mutual Funds" />
-                <label htmlFor="">Mutual Funds</label>
-              </div>
-              <div className="check-input">
-                <input type="checkbox" value="Crypto" />
-                <label htmlFor="">Crypto</label>
-              </div>
+            <div className="check-input">
+              <input
+                type="checkbox"
+                value="Insurance"
+                {...register("services", { required: true })}
+              />
+              <label htmlFor="services">Insurance</label>
             </div>
-            <div className="checkbox-input">
-              <div className="check-input">
-                <input type="checkbox" value="Insurance" />
-                <label htmlFor="">Insurance</label>
-              </div>
-              <div className="check-input">
-                <input type="checkbox" value="Mutual Funds" />
-                <label htmlFor="">Mutual Funds</label>
-              </div>
-              <div className="check-input">
-                <input type="checkbox" value="Crypto" />
-                <label htmlFor="">Crypto</label>
-              </div>
+            <div className="check-input">
+              <input
+                type="checkbox"
+                value="Mutual Funds"
+                {...register("services", { required: true })}
+              />
+              <label htmlFor="services">Mutual Funds</label>
             </div>
-            <div className="checkbox-input">
-              <div className="check-input">
-                <input type="checkbox" value="Insurance" />
-                <label htmlFor="">Insurance</label>
-              </div>
-              <div className="check-input">
-                <input type="checkbox" value="Mutual Funds" />
-                <label htmlFor="">Mutual Funds</label>
-              </div>
-              <div className="check-input">
-                <input type="checkbox" value="Crypto" />
-                <label htmlFor="">Crypto</label>
-              </div>
+            <div className="check-input">
+              <input
+                type="checkbox"
+                value="Crypto"
+                {...register("services", { required: true })}
+              />
+              <label htmlFor="services">Crypto</label>
             </div>
           </div>
+          {errors.services && <p className="error">Please select a service.</p>}
 
           <button type="submit" className="submit-btn">
             Get the Quote

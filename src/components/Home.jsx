@@ -14,7 +14,7 @@ const Home = () => {
       <ServiceSection></ServiceSection>
       <Assest></Assest>
       <WhyJoin></WhyJoin>
-      <OurPlan></OurPlan>
+      {/* <OurPlan></OurPlan> */}
       <FaqSection></FaqSection>
     </>
   );

@@ -143,6 +143,21 @@
   color: #000000;
 }
 
+.custom-tag {
+  width: fit-content;
+  height: 40px;
+  background-color: #1018281a;
+  color: #101828;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 4px 20px;
+  border-radius: 30px;
+}
+
 @media (max-width: 1024px) {
   .why-wrapper {
     padding: 40px 20px 10px 20px;

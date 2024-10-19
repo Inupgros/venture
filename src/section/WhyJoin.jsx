@@ -3,6 +3,8 @@ import "../Styles/whyjoin.css";
 import { FaFilter, FaUpload } from "react-icons/fa";
 import { HiOutlineViewGrid } from "react-icons/hi";
 import { IoMdArrowDropup } from "react-icons/io";
+import { LuAlertTriangle } from "react-icons/lu";
+import { SlBadge } from "react-icons/sl";
 
 const WhyJoin = () => {
   const [whyActive, setWhyActive] = useState("AiPowered");
@@ -78,8 +80,31 @@ const WhyJoin = () => {
                 </span>
                 Customizable Investment Advice
               </h6>
-              <div className="d-flex flex-column gap-2">
-                <span>
+              <div className="d-flex gap-2 w-100">
+                <div className="custom-tag">
+                  {" "}
+                  <span>
+                    <img src="\Images\Risk.png" alt="" />
+                  </span>{" "}
+                  Risk
+                </div>
+
+                <div className="custom-tag">
+                  {" "}
+                  <span>
+                    <img src="\Images\Reward.png" alt="" />
+                  </span>{" "}
+                  Reward
+                </div>
+                <div className="custom-tag">
+                  {" "}
+                  <span>
+                    <img src="\Images\Liqui.png" alt="" />
+                  </span>{" "}
+                  Liquidity
+                </div>
+
+                {/* <span>
                   Financial situations aren't the same. That is why we offer
                   tailor-made investment advice, which takes into account your
                   personal preferences, goals, and risk tolerance. We create a
@@ -104,7 +129,7 @@ const WhyJoin = () => {
                   like real estate or stocks, might not be easily converted to
                   cash, which means it is hard for you to access your funds
                   whenever they are most needed.
-                </span>
+                </span> */}
               </div>
             </div>
           </div>
