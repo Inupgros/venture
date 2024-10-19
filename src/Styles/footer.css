@@ -82,7 +82,12 @@
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .footer {
+    padding: 10px 10px;
+    gap: 0px;
+  }
+
   .footer .nav-links {
     flex-direction: column;
   }

@@ -6,21 +6,21 @@ const ServiceSection = () => {
     {
       title: "Portfolio Diversification",
       description:
-        "Create a well-balanced investment portfolio designed to reduce risk and enhance long-term growth.",
+        "Our portfolio diversification service helps you reduce your risk by spreading your investments across various assets.",
       iconSrc: "/Images/Vector.png", // Replace with an actual icon or image
       bgColor: "#a45cff",
     },
     {
       title: "Tax Optimizing Actions",
       description:
-        "Utilize effective tax-saving strategies to maximize your income and retain more wealth.",
+        "We will reduce your overall monetary liability and make sure that most of your hard-earned money stays in your pocket.",
       iconSrc: "/Images/Vector2.png",
       bgColor: "#5CCEFF",
     },
     {
-      title: "Network Tracking",
+      title: "Networth Tracking",
       description:
-        "Stay ahead with real-time tracking of your financial assets, ensuring informed and proactive financial decisions.",
+        "A net worth tracking service keeps your net worth tracked and analyses your financial assets to help you reach your financial goal.",
       iconSrc: "/Images/Vector3.png", // Replace with an actual icon or image
       bgColor: "#2389E7",
     },
@@ -30,14 +30,14 @@ const ServiceSection = () => {
       <div className="d-flex flex-column gap-3">
         <h2 className="w-100 text-center">The Services We Provide</h2>
         <p>
-          Discover a range of personalized financial services designed to help
-          you manage, grow, and protect your wealth.
+          Our suite of custom financial solutions can get you one step closer to
+          realizing your dream with more peace of mind.
         </p>
       </div>
 
       <div className="services-container">
         {services.map((service, index) => (
-          <div className="service-card" key={index}>
+          <div className={`service-card service-card-${index}`} key={index}>
             <div className="w-100 d-flex align-items-center justify-content-center">
               <div
                 className="service-icon"

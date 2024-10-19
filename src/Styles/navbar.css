@@ -1,16 +1,17 @@
-.navbar {
+.navbara {
   width: 100%;
-  height: 99px;
-  padding: 10px 104px 10px 104px !important;
+  height: auto;
+  padding: 10px 104px 10px 104px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #00000059;
   backdrop-filter: blur(104px);
+  margin: auto;
 }
 
 /* Logo section */
-.navbar .logo {
+.navbara .logo {
   display: flex;
   align-items: center;
   color: white;
@@ -18,34 +19,33 @@
   font-weight: bold;
 }
 
-.navbar .logo img {
+.navbara .logo img {
   height: 30px;
   margin-right: 10px;
 }
 
 /* Navigation links */
-.navbar ul {
+.navbara ul {
   list-style-type: none;
   display: flex;
   align-items: center;
 }
 
-.navbar ul div {
+.navbara ul div {
   margin-left: 40px;
   display: flex;
   gap: 16px;
   align-items: center;
   margin-top: 10px;
 }
-.navbar ul div .how-use-btn {
-  font-family: Inter;
+.navbara ul div .how-use-btn {
   font-size: 16px;
   font-weight: 600;
   line-height: 19.36px;
   text-align: center;
   color: #2489e7;
 }
-.navbar ul div .contact-btn {
+.navbara ul div .contact-btn {
   width: 154px;
   height: 51px;
   padding: 16px 32px 16px 32px;
@@ -60,26 +60,30 @@
   color: #ffffff;
 }
 
-.navbar ul li {
+.navbara ul li {
   margin: 0 30px;
   font-size: 14px;
   font-weight: 500;
   margin-top: 10px;
 }
 
-.navbar ul li a {
+.navbara ul li a {
   color: #ffffff;
   text-decoration: none;
   text-align: center;
   text-align: center;
 }
 
-.navbar ul li a:hover {
+.navbara ul li a:hover {
+  color: #82a0ff;
+}
+
+.navbara ul li a.active {
   color: #82a0ff;
 }
 
 /* Button */
-.navbar .btn {
+.navbara .btn {
   background-color: #4b00d6;
   padding: 10px 20px;
   color: white;
@@ -88,20 +92,61 @@
   font-size: 1rem;
 }
 
-.navbar .btn:hover {
+.navbara .btn:hover {
   background-color: #5c40ff;
 }
 
+.hamburger {
+  width: 25px;
+  height: 25px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
 /* Responsive */
-@media (max-width: 768px) {
-  .navbar ul {
+
+@media (max-width: 1920px) {
+  .hamburger {
     display: none;
   }
+}
 
-  .navbar .menu-toggle {
+@media (max-width: 1024px) {
+  .navbara {
+    padding: 20px 20px !important;
+    flex-wrap: wrap;
+  }
+  .hamburger {
+    display: block;
+  }
+  .logo-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menuhide {
+    display: none !important;
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+  }
+
+  .menushow {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    transition: ease-in-out 0.5s;
+  }
+
+  .navbara .menu-toggle {
     display: block;
     color: white;
     font-size: 1.5rem;
-    cursor: pointer;
   }
 }

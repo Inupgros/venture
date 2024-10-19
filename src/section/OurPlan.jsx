@@ -10,9 +10,11 @@ const OurPlan = () => {
 
         <h2 className="section-title">Our Plans</h2>
         <p className="section-description">
-          Register your account via email, google, and facebook. By registering
-          an account, you can use our basic features for recruiting by getting
-          qualified employees.
+          From risk-based to return-focused strategy, we have several strategies
+          designed for your financial goals in accordance with the levels of
+          risks you are willing and able to take. Regardless of whether you are
+          a novice or an expert investor, we provide plenty of plans to keep up
+          with your growth, additionally protecting your investments
         </p>
       </div>
 
@@ -22,13 +24,12 @@ const OurPlan = () => {
           <div className="d-flex flex-column gap-2">
             <h3>Investment Advisors</h3>
             <p className="price">
-              ₹10,000 <span>/mo.</span>
+              ₹10,000 <span>/year.</span>
             </p>
           </div>
 
           <p className="plan-description">
-            Congue dolor est consequat nisi egest in at amet quam. Quis feugiat
-            ante.
+            Get the most out of your money with our advanced plan.
           </p>
           <ul className="features">
             <li>
@@ -36,14 +37,16 @@ const OurPlan = () => {
               <span>
                 <RiCheckboxCircleFill></RiCheckboxCircleFill>
               </span>
-              Turpis velit tristique pretium.
+              A portfolio customized to your investment objective and risk
+              profile.
             </li>
             <li>
               {" "}
               <span>
                 <RiCheckboxCircleFill></RiCheckboxCircleFill>
               </span>
-              Placerat arcu pellentesque mauris.
+              Take advantage of personalized strategies to solve tax liabilities
+              and enhance after-tax returns on your investments.
             </li>
             <li>
               {" "}
@@ -59,40 +62,33 @@ const OurPlan = () => {
         <div className="basic-plan-card">
           <h3>FINADVISORS</h3>
           <p className="price">
-            ₹1,000 <span>/mo.</span>{" "}
+            ₹1,000 <span>/year.</span>{" "}
           </p>
-          <p className="plan-description">
-            FinAdvisors provides more in less with good advantages and amazing
-            services.
-          </p>
+          <p className="plan-description">Get more in less with Finadvisor.</p>
           <ul className="features">
             <li>
               {" "}
               <span>
                 <RiCheckboxCircleFill></RiCheckboxCircleFill>
               </span>
-              Tincidunt euismod ultrices a ornare.
+              Receive an individualized plan for your savings goal and risk
+              profile.
             </li>
             <li>
               {" "}
               <span>
                 <RiCheckboxCircleFill></RiCheckboxCircleFill>
               </span>
-              Fringilla gravida a nunc molestie.
+              From start until finish under the mentorship of our experienced
+              financial advisors, you will be guided on actions to take.
             </li>
             <li>
               {" "}
               <span>
                 <RiCheckboxCircleFill></RiCheckboxCircleFill>
               </span>
-              Fringilla gravida a nunc molestie.
-            </li>
-            <li>
-              {" "}
-              <span>
-                <RiCheckboxCircleFill></RiCheckboxCircleFill>
-              </span>
-              Turpis nunc fusce magna arcu.
+              Get continuous monitoring and adjustment of your portfolio to stay
+              in line with the capital markets.
             </li>
           </ul>
           <button className="btn-get-started">Get Started</button>

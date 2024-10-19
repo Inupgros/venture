@@ -42,7 +42,7 @@ const FaqSection = () => {
       <div className="faq-container">
         <div className="faq-inputs">
           <h2>FAQs</h2>
-          {/* <form onSubmit={handleSubmit(onSubmit)}>
+          <form onSubmit={handleSubmit(onSubmit)}>
             <div className="d-flex flex-column gap-2">
               <input
                 type="email"
@@ -56,7 +56,7 @@ const FaqSection = () => {
                 })}
               />
               {errors.faqEmail && (
-                <p className="error">{errors.faqEmail.message}</p>
+                <span className="error">{errors.faqEmail.message}</span>
               )}
 
               <textarea
@@ -66,7 +66,7 @@ const FaqSection = () => {
                 })}
               />
               {errors.faqMessage && (
-                <p className="error">{errors.faqMessage.message}</p>
+                <span className="error">{errors.faqMessage.message}</span>
               )}
 
               <span>
@@ -76,7 +76,7 @@ const FaqSection = () => {
             <button type="submit" className="faq-submit-btn">
               Send
             </button>
-          </form> */}
+          </form>
         </div>
 
         {/* FAQ Accordion */}
@@ -134,11 +134,8 @@ const FaqSection = () => {
             <img src="\Images\Icon.png" alt="" />
           </div>
           <div>
-            <h2>What You Need Help With?</h2>
-            <p>
-              Reach out today for a personalized quote and let us help you for
-              your financial goals.
-            </p>
+            <h2>Contact us now</h2>
+            <p>To get closer to your financial goal, reach out to us today</p>
           </div>
           <div className="send-email">
             <div>
@@ -146,7 +143,7 @@ const FaqSection = () => {
             </div>
             <div className="d-flex flex-column gap-1">
               <h5>Send Us An Email</h5>
-              <p>Our Friendly team is always here to help.</p>
+              <p>Get in touch with our expert for detailed guidance.</p>
               <span>info@finadvisors.com</span>
             </div>
           </div>

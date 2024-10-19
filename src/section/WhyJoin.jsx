@@ -1,23 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Styles/whyjoin.css";
 import { FaFilter, FaUpload } from "react-icons/fa";
 import { HiOutlineViewGrid } from "react-icons/hi";
 import { IoMdArrowDropup } from "react-icons/io";
 
 const WhyJoin = () => {
+  const [whyActive, setWhyActive] = useState("AiPowered");
+
+  const handelChoosePlan = (plan) => {
+    setWhyActive(plan);
+  };
+
   return (
     <div className="why-wrapper">
       <div className="why-content">
         <div className="why-head">
           <h1>Why Choose Us?</h1>
           <span>
-            Benefit from personalized financial solutions, expert guidance, and
-            a commitment to your success. Your goals are our priority!
+            We make sure that your investments, tax strategies, and financial
+            planning are all properly aligned with each other—as well as with
+            you. Building a long-term culture and growth of integrity, trust,
+            and transparency is what we teach in clarity to deliver solutions.
           </span>
         </div>
 
         <div className="why-list">
-          <div className="why-list-items why-active-list">
+          <div
+            className={
+              whyActive === "AiPowered" ? "why-active-list" : "why-list-items"
+            }
+            onClick={() => handelChoosePlan("AiPowered")}
+          >
             <div className="list-content">
               <h6 className="list-heading">
                 <span>
@@ -26,12 +39,17 @@ const WhyJoin = () => {
                 AI-Powered Investment Advisor
               </h6>
               <span>
-                Get personalized investment insights with AI technology to
-                optimize your portfolio effectively.
+                Get a glimpse of the future in financial planning with our AI
+                investment advisor.
               </span>
             </div>
           </div>
-          <div className="why-list-items">
+          <div
+            className={
+              whyActive === "Affordable" ? "why-active-list" : "why-list-items"
+            }
+            onClick={() => handelChoosePlan("Affordable")}
+          >
             <div className="list-content">
               <h6 className="list-heading">
                 <span>
@@ -40,12 +58,19 @@ const WhyJoin = () => {
                 Affordable Investment Solutions
               </h6>
               <span>
-                Why pay ₹10,000+ for I.A? Our expert insights are available for
-                just ₹1,000 - only 10% of the typical cost!
+                No need to pay ₹10,000+ for investment advisory when you can now
+                access the thoughts of our experts for just Rs 1,000.
               </span>
             </div>
           </div>
-          <div className="why-list-items">
+          <div
+            className={
+              whyActive === "Customizable"
+                ? "why-active-list"
+                : "why-list-items"
+            }
+            onClick={() => handelChoosePlan("Customizable")}
+          >
             <div className="list-content">
               <h6 className="list-heading">
                 <span>
@@ -55,21 +80,30 @@ const WhyJoin = () => {
               </h6>
               <div className="d-flex flex-column gap-2">
                 <span>
-                  Tailor your investment strategy based on three key criteria
+                  Financial situations aren't the same. That is why we offer
+                  tailor-made investment advice, which takes into account your
+                  personal preferences, goals, and risk tolerance. We create a
+                  plan for you, taking these points into account:
                 </span>
                 <span>
                   <b>Risk:</b>
-                  Tailor your investment strategy based on three key criteria
+                  The sudden drops or swings of the stock market can severely
+                  decrease your investment, which in turn may lead to short-term
+                  losses.
                 </span>
 
                 <span>
                   <b>Risk:</b>
-                  Tailor your investment strategy based on three key criteria
+                  The strength of your money may decline over time because the
+                  rising inflation may cause the purchasing power of your
+                  returns to lag behind the cost of living.
                 </span>
 
                 <span>
-                  <b>Risk:</b>
-                  Tailor your investment strategy based on three key criteria
+                  <b>Risk:</b>: There are times when some specific investments,
+                  like real estate or stocks, might not be easily converted to
+                  cash, which means it is hard for you to access your funds
+                  whenever they are most needed.
                 </span>
               </div>
             </div>
@@ -77,7 +111,17 @@ const WhyJoin = () => {
         </div>
       </div>
       <div className="why-hero">
-        <img src="\Images\WhyHero.png" alt="" />
+        <div className="why-hero-img">
+          {whyActive === "AiPowered" && (
+            <img src="\Images\WhyHero.png" alt="" />
+          )}
+          {whyActive === "Affordable" && (
+            <img src="\Images\WhyHero2.jpg" alt="" />
+          )}{" "}
+          {whyActive === "Customizable" && (
+            <img src="\Images\WhyHero3.jpg" alt="" />
+          )}
+        </div>
         <div className="why-total-profit">
           <img src="\Images\Profit1.png" alt="" />
           <span>Total Profit</span>

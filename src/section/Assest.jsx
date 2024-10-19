@@ -186,10 +186,12 @@ const Assest = () => {
           <div className="w-100 d-flex flex-column gap-4">
             <h1>Effective Asset Investment Strategies</h1>
             <p>
-              Explore strategic approaches to asset investment, such as direct
-              investments in mutual funds, which offer potential for growth and
-              diversification. By making informed choices, you can build a
-              robust financial portfolio that aligns with your long-term goals.
+              The asset investment strategies of ours are very effective, and
+              they will increase your assets by making investments with the
+              right knowledge or information. We focus on building a
+              well-diversified portfolio and stick to it according to your
+              financial goals. Create financial plans for the long term, growth
+              and stability.
             </p>
           </div>
         </div>
@@ -202,11 +204,12 @@ const Assest = () => {
           <div className="w-100 d-flex flex-column gap-4">
             <h1>Comprehensive Asset Allocation Strategy</h1>
             <p>
-              Define your ideal investment distribution across various asset
-              classes, such as 15% in gold, 30% in real estate, and 40% in
-              equities. This strategic approach helps mitigate risk while
-              maximizing potential returns, ensuring your portfolio is
-              well-rounded and aligned with your financial objectives.
+              Our rigorous asset allocation process is designed to complement
+              your investment objectives and broaden exposure across stocks,
+              bonds, real estate, and cash. This customized approach eliminates
+              risk. We actively manage the asset allocation according to market
+              trends and your individual requirements so that it is
+              crisis-proofed and positioned for growth.
             </p>
           </div>
         </div>
@@ -234,8 +237,7 @@ const Assest = () => {
                       tick={{
                         color: "#000",
                         fontSize: "12px",
-                        fontFamily: "poppins",
-                        fontWeight: 500,
+                        fontWeight: 600,
                       }}
                     />
                     <YAxis
@@ -244,8 +246,7 @@ const Assest = () => {
                       tick={{
                         color: "#000",
                         fontSize: "12px",
-                        fontFamily: "poppins",
-                        fontWeight: 500,
+                        fontWeight: 600,
                       }}
                     />
 
@@ -292,10 +293,12 @@ const Assest = () => {
           <div className="d-flex flex-column gap-2">
             <h1>Strategic Tax Planning</h1>
             <p>
-              Maximize your savings through tailored tax strategies that align
-              with your financial goals. By understanding the best practices for
-              tax optimization, you can effectively reduce your tax burden and
-              enhance your wealth accumulation.
+              Our seasoned experts, through a careful and decisive approach,
+              assist you in minimizing your taxes. We assess your financial
+              situation and create tailored plans for capturing deductions,
+              credits, and tax-preferred investment opportunities. We help keep
+              your hard-earned income in your pocket and make sure you are being
+              tax-compliant all year long.
             </p>
           </div>
           <div className="tax-saving-container">
@@ -363,7 +366,7 @@ const Assest = () => {
                   </div>
 
                   <div className="d-flex flex-column gap-2 w-75">
-                    <h6 cla>
+                    <h6>
                       Residential Energy <span>₹139k</span>
                     </h6>
                     <div
@@ -440,10 +443,11 @@ const Assest = () => {
           <div className="d-flex flex-column gap-2">
             <h1>Tax Harvesting Strategies</h1>
             <p>
-              Optimize your tax savings annually through effective tax
-              harvesting techniques. By strategically selling investments at a
-              loss to offset gains, you can reduce your taxable income and
-              enhance your overall financial strategy.
+              Our tax-harvesting strategies work to sell investments when they
+              are losing money, making those losses there on paper so that gains
+              can get offset in other places. You can use this method to lessen
+              the amount of taxes you owe for profits on your investments and
+              keep a well-structured balance in your portfolio.
             </p>
           </div>
         </div>

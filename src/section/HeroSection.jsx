@@ -77,10 +77,10 @@ const HeroSection = () => {
             Investment Advisor
           </h1>
           <p>
-            Managing your finances can feel overwhelming, especially with bills
-            to cover, savings goals to reach, and unplanned expenses that pop
-            up. However, with our expert guidance and resources, you can
-            confidently take charge of your financial journey.
+            Do you want to increase your wealth, secure your financial future,
+            or navigate the complex world of investments? We are your personal
+            investment advisor to help you make informed decisions with our
+            expert guidance and resources for your needs.
           </p>
           <div className="hero-buttons">
             <button className=" get-started">Get Started</button>
@@ -120,8 +120,7 @@ const HeroSection = () => {
                       tick={{
                         color: "#000",
                         fontSize: "12px",
-                        fontFamily: "poppins",
-                        fontWeight: 500,
+                        fontWeight: 600,
                       }}
                     />
                     <YAxis
@@ -130,7 +129,7 @@ const HeroSection = () => {
                       tick={{
                         color: "#000",
                         fontSize: "12px",
-                        fontFamily: "poppins",
+
                         fontWeight: 500,
                       }}
                     />

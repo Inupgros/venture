@@ -17,7 +17,7 @@
 
 .faq-inputs {
   width: 490px;
-  height: 388px;
+  max-height: 388px;
   display: flex;
   flex-direction: column;
   gap: 28px;
@@ -42,7 +42,6 @@
 .faq-inputs textarea {
   display: block;
   width: 100%;
-
   padding: 1rem;
   border-radius: 14px;
   border: 1px solid #ffffff0d;
@@ -70,7 +69,7 @@
 
 .faq-accordion {
   width: 640px;
-  height: 360px;
+  height: auto;
   gap: 24px;
   color: #ffffff;
 }
@@ -110,6 +109,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin-top: 30px;
 }
 
 .contact-form-container form {
@@ -182,7 +182,8 @@
 }
 
 .error {
-  color: #ff3838;
+  color: #ff3838 !important;
+  line-height: 18px;
 }
 
 .contact-left {
@@ -236,8 +237,48 @@
   color: #61399f;
 }
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .faq-section {
+    padding: 40px 20px 40px 20px;
+  }
+  .faq-container {
     flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .contact-form-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin: 0px;
+  }
+}
+
+@media (max-width: 425px) {
+  .faq-inputs {
+    width: 363px;
+    max-height: 388px;
+  }
+
+  .faq-accordion {
+    width: 402px;
+  }
+
+  .contact-left {
+    width: 372px;
+  }
+
+  .contact-form-container form {
+    width: 471px;
+    height: auto;
+  }
+
+  .faq-submit-btn {
+    width: 100%;
+  }
+
+  .contact-form-container form .submit-btn {
+    width: 100%;
   }
 }

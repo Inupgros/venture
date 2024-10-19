@@ -1,6 +1,6 @@
 .how-get-start {
   width: 100%;
-  padding: 80px 104px 80px 104px;
+  padding: 80px 104px 20px 104px;
   background: #151515;
   color: white;
 }
@@ -20,7 +20,7 @@
   background-color: #f7f7fb0d;
 }
 .stock-suggestion-wrap .stock-webview .web-view-tabbar {
-  width: 527.28px;
+  width: 100%;
   height: 52.56px;
   border-radius: 30.43px 30.43px 0px 0px;
   background-color: #ffffff0d;
@@ -147,6 +147,11 @@
   justify-content: space-between;
 }
 
+.web-view-stocks1:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 0.3s;
+}
+
 .web-view-stocks2 {
   position: absolute;
   top: 170px;
@@ -159,6 +164,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.web-view-stocks2:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 0.3s;
 }
 
 .web-view-stocks3 {
@@ -177,6 +186,10 @@
   align-items: center;
 }
 
+.web-view-stocks3:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 0.3s;
+}
 .web-view-stocks3 .stocks3-dash {
   width: 201.9px;
   height: 7.51px;
@@ -213,6 +226,11 @@
   align-items: center;
 }
 
+.web-view-stocks4:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 0.3s;
+}
+
 .web-view-stocks5 {
   position: absolute;
   top: 330px;
@@ -224,6 +242,11 @@
   background-color: #ffffff0d;
   display: flex;
   align-items: center;
+}
+
+.web-view-stocks5:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 0.3s;
 }
 
 .web-view-stocks6 {
@@ -243,14 +266,18 @@
   align-items: center;
 }
 
+.web-view-stocks6:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 0.3s;
+}
+
 .stocks6-amount {
-  width: 68px;
+  width: fit-content;
   height: 26px;
-  padding: 6px 12px 6px 12px;
+  padding: 8px 12px 4px 12px;
   border-radius: 30px;
   background-color: #ffffff1a;
-  font-family: Inter;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 12.1px;
 }
@@ -290,7 +317,7 @@
 
 .howGet-header p {
   max-width: 764px;
-  font-family: Inter;
+
   font-size: 18px;
   font-weight: 400;
   line-height: 32px;
@@ -316,6 +343,12 @@
   box-shadow: 0px 0px 0px 0px #ffffff;
   box-shadow: 0px 0px 0px 1px #f4f4f51a;
   box-shadow: 0px 0px 0px 0px #00000000;
+}
+
+.step-box:hover {
+  transform: translateY(-2px) scale(1.01);
+  transition: ease-in-out 0.4s;
+  box-shadow: 0px 0px 0px 1px #f4f4f51a;
 }
 
 .step-box .step1 {
@@ -372,7 +405,6 @@
 }
 
 .users-info .user-c1 span {
-  font-family: Inter;
   font-size: 12px;
   font-weight: 400;
   line-height: 14.52px;
@@ -457,6 +489,10 @@
   line-height: 28px;
   text-align: left;
   color: #ffffff80;
+}
+
+.step-guide p:hover {
+  color: #ffffff;
 }
 
 /*  Step 2 box */
@@ -807,7 +843,6 @@
 }
 
 .manage-tax-wrap span {
-  font-family: Inter;
   font-size: 12px;
   font-weight: 400;
   line-height: 16.94px;
@@ -1147,4 +1182,116 @@
   position: absolute;
   top: 65px;
   left: 140px;
+}
+
+@media (max-width: 1024px) {
+  .stock-suggestion-wrap .stock-webview {
+    width: 508.74px;
+  }
+
+  .web-view-stocks6 {
+    position: absolute;
+    width: 495px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+  }
+  .hero-content-wrappper {
+    flex-direction: column;
+  }
+  .hero-content-wrappper {
+    padding: 60px 10px;
+  }
+
+  .hero-content p {
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+  .how-step-wrap {
+    align-items: center;
+    justify-content: center;
+  }
+  .how-get-start {
+    padding: 20px 20px;
+  }
+  .track .track-box1 {
+    position: absolute;
+    right: 0px;
+    width: 267.54px;
+  }
+  .track .track-box2 {
+    position: absolute;
+    padding: 8px;
+    right: 18px;
+    bottom: 0px;
+    width: 318.54px;
+  }
+
+  .track .track-box2 img {
+    max-width: 90%;
+  }
+
+  .track .shield-icon {
+    position: absolute;
+    top: -12px;
+    left: -83px;
+  }
+  .track .rupee-icon {
+    position: absolute;
+    top: -12px;
+    left: -13px;
+  }
+  .circleb-icon {
+    position: absolute;
+    top: 54px;
+    left: -13px;
+  }
+  .circles-icon {
+    position: absolute;
+    top: 59px;
+    left: -34px;
+  }
+}
+
+@media (max-width: 425px) {
+  .step7-wrap .step7 {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .step7-wrap {
+    width: 100%;
+    height: auto;
+  }
+
+  .step7-wrap .step7 .step7-guide {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .step7-wrap .step7 .track {
+    width: 347px;
+  }
+  .track .track-box3 {
+    width: 258px;
+  }
+
+  .stock-suggestion-wrap {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .stock-suggestion-wrap .stock-webview {
+    width: 100%;
+  }
+
+  .hero-content-wrappper {
+    padding: 0px;
+  }
 }

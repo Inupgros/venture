@@ -1,6 +1,6 @@
 .services-section {
   width: 100%;
-  height: 663px;
+  height: auto;
   padding: 80px 104px 80px 104px;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,6 @@
 
 .services-section h2 {
   font-size: 2.5rem;
-
   color: #ffffff;
 }
 
@@ -43,10 +42,28 @@
   background-color: #ffffff05;
   text-align: center;
   transition: transform 0.2s ease;
+  cursor: pointer;
 }
 
 .service-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-10px) scale(1.02);
+  transition: ease-in-out 0.4s;
+}
+
+.service-card-0:hover {
+  background-color: #a45cff33;
+  box-shadow: 0px 4px 34px 2px #1018280d;
+  color: #ffffff;
+}
+
+.service-card-1:hover {
+  background-color: #5cceff33;
+  box-shadow: 0px 4px 34px 2px #1018280d;
+}
+
+.service-card-2:hover {
+  background-color: #2389e733;
+  box-shadow: 0px 4px 34px 2px #1018280d;
 }
 
 .service-icon {
@@ -60,7 +77,6 @@
 }
 
 .service-card h3 {
-  font-family: Poppins;
   font-size: 20px;
   font-weight: 600;
   line-height: 30px;
@@ -69,7 +85,6 @@
 }
 
 .service-card p {
-  font-family: Inter;
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
@@ -77,15 +92,26 @@
   color: #ffffff80;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .services-container {
-    flex-direction: column;
-    align-items: center;
-  }
+.service-card p:hover {
+  color: #ffffff;
+}
 
-  .service-card {
-    width: 100%;
-    max-width: 400px;
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .services-section {
+    padding: 80px 0px 80px 0px;
+  }
+}
+
+/* Mediq Query 425px */
+@media (max-width: 425px) {
+  .services-section h2 {
+    font-size: 32px;
+  }
+  .services-section {
+    padding: 40px 10px 40px 10px;
+  }
+  .services-section > div > p {
+    width: fit-content;
   }
 }
