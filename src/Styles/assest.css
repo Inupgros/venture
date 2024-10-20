@@ -183,6 +183,11 @@
   position: relative;
 }
 
+.allocation-chart-wrap:hover {
+  transform: translateY(-2px) scale(1.02);
+  transition: all 0.3s;
+}
+
 .allocation-chart {
   width: 100%;
   height: 288.38px;

@@ -15,11 +15,11 @@ const FaqSection = () => {
     formState: { errors: errorsForm1 },
   } = useForm();
 
-  const scriptURL =
-    "https://script.google.com/macros/s/AKfycbxRPx0BfhmuedNUtX6LXCAaU0p3WjRBJ6tKwfJVi0FEigYiXqbq6KV0X1UBruSmJitL1w/exec";
+  const contactFormUrl =
+    "https://script.google.com/macros/s/AKfycby77Oe85JShwUyxTQLWdRvOZ_GNM0e5LkN2NSoIVxiCgE7pd-XPxAm2a8R9GcMBwqy8/exec";
 
   const fqqUrl =
-    "https://script.google.com/macros/s/AKfycby8k4LU6--h5bQlSzialYX2AjuNs0ptuenrMzhZmlF2CN789gu83tAzFVngwCJJUiyY/exec";
+    "https://script.google.com/macros/s/AKfycbxa9mAf6pY8GoD9_gtWRiBqHu2Wkdo_YF4X0nQ_9g20TgpPWaDWuKLdEeBh2DF4T4Dg/exec";
 
   const onSubmit = (data) => {
     const formData = new FormData();
@@ -28,7 +28,7 @@ const FaqSection = () => {
     formData.append("message", data.message);
     formData.append("services", data.services.join(", ")); // Concatenate checkbox values
 
-    fetch(scriptURL, {
+    fetch(contactFormUrl, {
       method: "POST",
       mode: "no-cors", // Adding no-cors mode
       body: formData,
@@ -159,8 +159,8 @@ const FaqSection = () => {
             <img src="\Images\Icon.png" alt="" />
           </div>
           <div>
-            <h2>Contact us now</h2>
-            <p>To get closer to your financial goal, reach out to us today</p>
+            <h2>Coming Soon</h2>
+            {/* <p>To get closer to your financial goal, reach out to us today</p> */}
           </div>
           <div className="send-email">
             <div>
@@ -230,7 +230,33 @@ const FaqSection = () => {
                 value="Mutual Funds"
                 {...register("services", { required: true })}
               />
+              <label htmlFor="services">Public Provident Fund</label>
+            </div>
+            <div className="check-input">
+              <input
+                type="checkbox"
+                value="Crypto"
+                {...register("services", { required: true })}
+              />
+              <label htmlFor="services">Real Estate</label>
+            </div>
+          </div>
+          <div className="checkbox-group">
+            <div className="check-input">
+              <input
+                type="checkbox"
+                value="Insurance"
+                {...register("services", { required: true })}
+              />
               <label htmlFor="services">Mutual Funds</label>
+            </div>
+            <div className="check-input">
+              <input
+                type="checkbox"
+                value="Mutual Funds"
+                {...register("services", { required: true })}
+              />
+              <label htmlFor="services">Bonds</label>
             </div>
             <div className="check-input">
               <input
@@ -239,6 +265,58 @@ const FaqSection = () => {
                 {...register("services", { required: true })}
               />
               <label htmlFor="services">Crypto</label>
+            </div>
+          </div>
+          <div className="checkbox-group">
+            <div className="check-input">
+              <input
+                type="checkbox"
+                value="Insurance"
+                {...register("services", { required: true })}
+              />
+              <label htmlFor="services">Precious Metals</label>
+            </div>
+            <div className="check-input">
+              <input
+                type="checkbox"
+                value="Mutual Funds"
+                {...register("services", { required: true })}
+              />
+              <label htmlFor="services">National pension scheme</label>
+            </div>
+            <div className="check-input">
+              <input
+                type="checkbox"
+                value="Crypto"
+                {...register("services", { required: true })}
+              />
+              <label htmlFor="services">Domestic</label>
+            </div>
+          </div>
+          <div className="checkbox-group">
+            <div className="check-input">
+              <input
+                type="checkbox"
+                value="Insurance"
+                {...register("services", { required: true })}
+              />
+              <label htmlFor="services">FD</label>
+            </div>
+            <div className="check-input">
+              <input
+                type="checkbox"
+                value="Mutual Funds"
+                {...register("services", { required: true })}
+              />
+              <label htmlFor="services">Cash</label>
+            </div>
+            <div className="check-input">
+              <input
+                type="checkbox"
+                value="Crypto"
+                {...register("services", { required: true })}
+              />
+              <label htmlFor="services">Assets</label>
             </div>
           </div>
           {errors.services && <p className="error">Please select a service.</p>}

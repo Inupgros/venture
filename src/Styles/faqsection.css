@@ -142,7 +142,7 @@
 .contact-form-container form .checkbox-group {
   width: 100%;
   display: flex;
-  gap: 35px;
+  justify-content: space-between;
 }
 .checkbox-group .checkbox-input {
   width: 33%;

@@ -77,19 +77,12 @@ const HeroSection = () => {
             Investment Advisor
           </h1>
           <p>
-            Do you want to increase your wealth, secure your financial future,
-            or navigate the complex world of investments? We are your personal
-            investment advisor to help you make informed decisions with our
-            expert guidance and resources for your needs.
+            Managing investments can be overwhelming—juggling asset selection,
+            performance tracking, and market trends. With our platform, it's all
+            just a click away
           </p>
           <div className="hero-buttons">
             <button className=" get-started">Get Started</button>
-            <Link className="learn-more">
-              Learn More{" "}
-              <span>
-                <MdKeyboardArrowRight></MdKeyboardArrowRight>
-              </span>
-            </Link>
           </div>
         </div>
 

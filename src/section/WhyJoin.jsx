@@ -3,7 +3,7 @@ import "../Styles/whyjoin.css";
 import { FaFilter, FaUpload } from "react-icons/fa";
 import { HiOutlineViewGrid } from "react-icons/hi";
 import { IoMdArrowDropup } from "react-icons/io";
-import { LuAlertTriangle } from "react-icons/lu";
+import { FiAlertTriangle } from "react-icons/fi";
 import { SlBadge } from "react-icons/sl";
 
 const WhyJoin = () => {
@@ -48,6 +48,67 @@ const WhyJoin = () => {
           </div>
           <div
             className={
+              whyActive === "Customizable"
+                ? "why-active-list"
+                : "why-list-items"
+            }
+            onClick={() => handelChoosePlan("Customizable")}
+          >
+            <div className="list-content">
+              <h6 className="list-heading">
+                <span>
+                  <HiOutlineViewGrid></HiOutlineViewGrid>
+                </span>
+                Customizable Investment Advice
+              </h6>
+              <p style={{ color: "" }}>
+                {" "}
+                Tailor your investment strategy based on three key criteria:
+              </p>
+
+              <div className="d-flex gap-2 w-100">
+                <div className="custom-tag">
+                  {whyActive === "Customizable" ? (
+                    <span>
+                      <img src="\Images\AlertW.png" alt="" />
+                    </span>
+                  ) : (
+                    <span style={{ color: "#000000", fontSize: "24px" }}>
+                      <FiAlertTriangle></FiAlertTriangle>
+                    </span>
+                  )}
+                  Risk
+                </div>
+                <div className="custom-tag">
+                  {" "}
+                  {whyActive === "Customizable" ? (
+                    <span>
+                      <img src=" \Images\BadgeW.png" alt="" />
+                    </span>
+                  ) : (
+                    <span>
+                      <img src=" \Images\Badge.png" alt="" />
+                    </span>
+                  )}
+                  Reward
+                </div>
+                <div className="custom-tag">
+                  {whyActive === "Customizable" ? (
+                    <span color="">
+                      <img src=" \Images\LiquiW.png" alt="" />
+                    </span>
+                  ) : (
+                    <span color="">
+                      <img src=" \Images\Liqui (2).png" alt="" />
+                    </span>
+                  )}
+                  Liquidity
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className={
               whyActive === "Affordable" ? "why-active-list" : "why-list-items"
             }
             onClick={() => handelChoosePlan("Affordable")}
@@ -65,104 +126,53 @@ const WhyJoin = () => {
               </span>
             </div>
           </div>
-          <div
-            className={
-              whyActive === "Customizable"
-                ? "why-active-list"
-                : "why-list-items"
-            }
-            onClick={() => handelChoosePlan("Customizable")}
-          >
-            <div className="list-content">
-              <h6 className="list-heading">
-                <span>
-                  <HiOutlineViewGrid></HiOutlineViewGrid>
-                </span>
-                Customizable Investment Advice
-              </h6>
-              <div className="d-flex gap-2 w-100">
-                <div className="custom-tag">
-                  {" "}
-                  <span>
-                    <img src="\Images\Risk.png" alt="" />
-                  </span>{" "}
-                  Risk
-                </div>
-
-                <div className="custom-tag">
-                  {" "}
-                  <span>
-                    <img src="\Images\Reward.png" alt="" />
-                  </span>{" "}
-                  Reward
-                </div>
-                <div className="custom-tag">
-                  {" "}
-                  <span>
-                    <img src="\Images\Liqui.png" alt="" />
-                  </span>{" "}
-                  Liquidity
-                </div>
-
-                {/* <span>
-                  Financial situations aren't the same. That is why we offer
-                  tailor-made investment advice, which takes into account your
-                  personal preferences, goals, and risk tolerance. We create a
-                  plan for you, taking these points into account:
-                </span>
-                <span>
-                  <b>Risk:</b>
-                  The sudden drops or swings of the stock market can severely
-                  decrease your investment, which in turn may lead to short-term
-                  losses.
-                </span>
-
-                <span>
-                  <b>Risk:</b>
-                  The strength of your money may decline over time because the
-                  rising inflation may cause the purchasing power of your
-                  returns to lag behind the cost of living.
-                </span>
-
-                <span>
-                  <b>Risk:</b>: There are times when some specific investments,
-                  like real estate or stocks, might not be easily converted to
-                  cash, which means it is hard for you to access your funds
-                  whenever they are most needed.
-                </span> */}
-              </div>
-            </div>
-          </div>
         </div>
       </div>
       <div className="why-hero">
         <div className="why-hero-img">
           {whyActive === "AiPowered" && (
-            <img src="\Images\WhyHero.png" alt="" />
+            <img src=" \Images\AIPower.png" alt="" />
           )}
           {whyActive === "Affordable" && (
-            <img src="\Images\WhyHero2.jpg" alt="" />
+            <img src="\Images\Reward.png" alt="" />
           )}{" "}
           {whyActive === "Customizable" && (
-            <img src="\Images\WhyHero3.jpg" alt="" />
+            <img src=" \Images\WhyHero.png" alt="" />
           )}
         </div>
-        <div className="why-total-profit">
-          <img src="\Images\Profit1.png" alt="" />
-          <span>Total Profit</span>
-          <p>
-            1.256
-            <span style={{ color: "#43BD1E" }}>
-              <IoMdArrowDropup></IoMdArrowDropup>
-            </span>
-          </p>
-        </div>
-        <div className="why-tax-harvesting p-3">
-          <h6>Average Tax Harvesting</h6>
-          <div className="w-100 d-flex align-items-center justify-content-center mt-4">
-            <img src="\Images\Graph2.png" alt="" />
-          </div>
-        </div>
+        {whyActive === "Customizable" && (
+          <>
+            <div className="why-total-profit">
+              <img src="\Images\Profit1.png" alt="" />
+              <span>Total Profit</span>
+              <p>
+                1.256
+                <span style={{ color: "#43BD1E" }}>
+                  <IoMdArrowDropup></IoMdArrowDropup>
+                </span>
+              </p>
+            </div>
+            <div className="why-tax-harvesting p-3">
+              <h6>Average Tax Harvesting</h6>
+              <div className="w-100 d-flex align-items-center justify-content-center mt-4">
+                <img src="\Images\Graph2.png" alt="" />
+              </div>
+            </div>
+          </>
+        )}
+
+        {whyActive === "AiPowered" && (
+          <>
+            <img src="\Images\Ai1.png" alt="" className="Ai1" />
+            <img src="\Images\Ai2.png" alt="" className="Ai2" />
+          </>
+        )}
+
+        {whyActive === "Affordable" && (
+          <>
+            <img src="\Images\Afford.png" alt="" className="invest-aford1" />
+          </>
+        )}
       </div>
     </div>
   );

@@ -78,6 +78,7 @@
   padding: 24px 24px 24px 36px;
   background-color: #2389e7;
   border-left: 4px solid #2389e7;
+  color: #ffffff !important;
 }
 .why-active-list h6 {
   color: #ffffff;
@@ -89,6 +90,13 @@
 .why-active-list span {
   color: #ffffffb2;
 }
+.why-active-list span {
+  color: #ffffffb2;
+}
+.why-active-list .custom-tag {
+  color: #ffffff !important;
+}
+
 .list-content {
   width: 100%;
   display: flex;
@@ -158,6 +166,34 @@
   border-radius: 30px;
 }
 
+/* Why Join US */
+
+.Ai1 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: -90px;
+}
+
+.Ai2 {
+  display: block;
+  position: absolute;
+  right: -150px;
+  top: 50%;
+}
+
+.invest-aford1 {
+  display: block;
+  position: absolute;
+  top: 41px;
+  right: -123px;
+}
+
+.Aiboth {
+  display: block;
+  position: absolute;
+}
+
 @media (max-width: 1024px) {
   .why-wrapper {
     padding: 40px 20px 10px 20px;
@@ -182,6 +218,12 @@
   }
   .why-tax-harvesting {
     right: 10px;
+  }
+  .Ai2 {
+    display: block;
+    position: absolute;
+    right: -125px;
+    top: 50%;
   }
 }
 
@@ -231,5 +273,52 @@
   .why-tax-harvesting {
     top: 393px;
     right: 98px;
+  }
+  .invest-aford1 {
+    position: absolute;
+    top: -125px;
+    right: -177px;
+  }
+
+  .Ai1 {
+    display: block;
+    position: absolute;
+    top: 34%;
+    left: -4px;
+  }
+
+  .Ai2 {
+    display: block;
+    position: absolute;
+    right: -150px;
+    top: 28%;
+  }
+}
+@media (max-width: 425px) {
+  .Ai1 {
+    display: block;
+    position: absolute;
+    top: 39%;
+    left: 42px;
+  }
+
+  .Ai2 {
+    width: 506px;
+    height: 505px;
+    display: block;
+    position: absolute;
+    right: -32px;
+    top: 39%;
+  }
+
+  .invest-aford1 {
+    position: absolute;
+    top: 39px;
+    right: -12px;
+  }
+
+  .invest-aford1 {
+    width: 429px;
+    height: 386px;
   }
 }

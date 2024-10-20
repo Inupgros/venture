@@ -6,21 +6,21 @@ const ServiceSection = () => {
     {
       title: "Portfolio Diversification",
       description:
-        "Our portfolio diversification service helps you reduce your risk by spreading your investments across various assets.",
+        "Create a well-balanced investment portfolio designed to reduce risk and enhance long-term growth.",
       iconSrc: "/Images/Vector.png", // Replace with an actual icon or image
       bgColor: "#a45cff",
     },
     {
       title: "Tax Optimizing Actions",
       description:
-        "We will reduce your overall monetary liability and make sure that most of your hard-earned money stays in your pocket.",
+        "Utilize effective tax-saving strategies to maximize your income and retain more wealth.",
       iconSrc: "/Images/Vector2.png",
       bgColor: "#5CCEFF",
     },
     {
       title: "Networth Tracking",
       description:
-        "A net worth tracking service keeps your net worth tracked and analyses your financial assets to help you reach your financial goal.",
+        "Stay ahead with real-time tracking of your financial assets, ensuring informed and proactive financial decisions.",
       iconSrc: "/Images/Vector3.png", // Replace with an actual icon or image
       bgColor: "#2389E7",
     },

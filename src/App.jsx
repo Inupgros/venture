@@ -68,7 +68,7 @@ function TrackUserClicks() {
 function App() {
   return (
     <main className="position-relative">
-      <div className="main-wrapper nav-wrapper">
+      <div>
         <NavBar />
       </div>
 

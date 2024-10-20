@@ -10,12 +10,21 @@ import FaqSection from "../section/FaqSection";
 const Home = () => {
   return (
     <>
-      <HeroSection></HeroSection>
-      <ServiceSection></ServiceSection>
-      <Assest></Assest>
-      <WhyJoin></WhyJoin>
-      {/* <OurPlan></OurPlan> */}
-      <FaqSection></FaqSection>
+      <div id="hero-section">
+        <HeroSection />
+      </div>
+      <div id="service-section">
+        <ServiceSection />
+      </div>
+      <div id="assest-section">
+        <Assest />
+      </div>
+      <div id="why-join-section">
+        <WhyJoin />
+      </div>
+      <div id="faq-section">
+        <FaqSection />
+      </div>
     </>
   );
 };

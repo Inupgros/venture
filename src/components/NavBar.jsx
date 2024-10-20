@@ -13,17 +13,21 @@ const NavBar = () => {
 
   const [active, setActive] = useState("Home");
 
-  const handleActive = (act) => {
+  const handleActive = (act, sectionId) => {
     setActive(act);
     setShowMenu(false);
+
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
     <nav class="navbara">
       <div className="logo-wrap">
         <Link class="logo" to="/">
-          <img src="Images\logo.png" alt="Logo" />
-          <span>FINADVISOR</span>
+          <img src="\Images\Comlogo-removebg-preview.png" alt="Logo" />
         </Link>
 
         <div className="hamburger" onClick={() => handleShowMenu()}>
@@ -40,7 +44,7 @@ const NavBar = () => {
           <Link
             to="/"
             className={active === "Home" ? "active" : ""}
-            onClick={() => handleActive("Home")}
+            onClick={() => handleActive("Home", "hero-section")}
           >
             Home
           </Link>
@@ -49,7 +53,7 @@ const NavBar = () => {
           <Link
             to="/"
             className={active === "Services" ? "active" : ""}
-            onClick={() => handleActive("Services")}
+            onClick={() => handleActive("Services", "service-section")}
           >
             Services
           </Link>
@@ -57,7 +61,7 @@ const NavBar = () => {
         <li>
           <Link
             className={active === "Work" ? "active" : ""}
-            onClick={() => handleActive("Work")}
+            onClick={() => handleActive("Work", "assest-section")}
           >
             How We Work
           </Link>
@@ -66,7 +70,7 @@ const NavBar = () => {
           <Link
             to="/"
             className={active === "Why" ? "active" : ""}
-            onClick={() => handleActive("Why")}
+            onClick={() => handleActive("Why", "why-join-section")}
           >
             Why Choose Us
           </Link>
@@ -75,7 +79,7 @@ const NavBar = () => {
           <Link
             to="/"
             className={active === "FAQs" ? "active" : ""}
-            onClick={() => handleActive("FAQs")}
+            onClick={() => handleActive("FAQs", "faq-section")}
           >
             FAQs
           </Link>
