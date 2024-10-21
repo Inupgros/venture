@@ -162,8 +162,15 @@
   margin: 0px;
   width: 16.8px;
   height: 16.8px;
-  background-color: #ffffff33;
-  border: 1px solid #ffffff33;
+  background-color: none;
+  border: 1px solid #ffffff33 !important;
+}
+
+.check-input label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: left;
 }
 
 .contact-form-container form .submit-btn {
@@ -188,7 +195,7 @@
 
 .contact-left {
   width: 457px;
-  height: 507px;
+  height: auto;
   display: flex;
   flex-direction: column;
   gap: 48px;
@@ -280,5 +287,11 @@
 
   .contact-form-container form .submit-btn {
     width: 100%;
+  }
+  .check-input label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: left;
   }
 }

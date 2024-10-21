@@ -1,16 +1,20 @@
 .navbara {
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
   position: fixed;
-  left: 232px;
-  height: 80px;
-  z-index: 99;
+  top: 0;
+  left: 0px; /* Ensure it's aligned to the left for all screen sizes */
+  right: 0; /* Makes it span the entire width */
   height: auto;
-  padding: 10px 104px 10px 104px;
+  z-index: 99;
+  padding: 10px 104px; /* Adjust padding for desktop */
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #00000059;
   backdrop-filter: blur(104px);
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 /* Logo section */
@@ -136,7 +140,9 @@
     display: flex;
     justify-content: space-between;
   }
-
+  .navbara {
+    left: 0px;
+  }
   .menuhide {
     display: none !important;
     transition: ease-in-out 0.5s;

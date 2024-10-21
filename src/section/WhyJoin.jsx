@@ -69,12 +69,12 @@ const WhyJoin = () => {
               <div className="d-flex gap-2 w-100">
                 <div className="custom-tag">
                   {whyActive === "Customizable" ? (
-                    <span>
+                    <span className="mx-1">
                       <img src="\Images\AlertW.png" alt="" />
                     </span>
                   ) : (
-                    <span style={{ color: "#000000", fontSize: "24px" }}>
-                      <FiAlertTriangle></FiAlertTriangle>
+                    <span className="mx-1">
+                      <img src="\Images\Alert.png" alt="" />
                     </span>
                   )}
                   Risk
@@ -82,11 +82,11 @@ const WhyJoin = () => {
                 <div className="custom-tag">
                   {" "}
                   {whyActive === "Customizable" ? (
-                    <span>
+                    <span className="mx-1">
                       <img src=" \Images\BadgeW.png" alt="" />
                     </span>
                   ) : (
-                    <span>
+                    <span className="mx-1">
                       <img src=" \Images\Badge.png" alt="" />
                     </span>
                   )}
@@ -94,11 +94,11 @@ const WhyJoin = () => {
                 </div>
                 <div className="custom-tag">
                   {whyActive === "Customizable" ? (
-                    <span color="">
+                    <span className="mx-1">
                       <img src=" \Images\LiquiW.png" alt="" />
                     </span>
                   ) : (
-                    <span color="">
+                    <span className="mx-1">
                       <img src=" \Images\Liqui (2).png" alt="" />
                     </span>
                   )}

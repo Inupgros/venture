@@ -1,13 +1,14 @@
 import React from "react";
 import "../Styles/footer.css";
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer class="footer">
-      <div class="logo">
-        <img src="Images/logo.png" alt="Logo" />
-        <span style={{ fontSize: "2rem", color: "white", fontWeight: "700" }}>
-          FINADVISOR
-        </span>
+      <div class="flogo">
+        <Link to="/">
+          <img src="\Images\Comlogo-removebg-preview.png" alt="Logo" />
+        </Link>
       </div>
 
       <ul class="nav-links">

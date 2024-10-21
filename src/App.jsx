@@ -67,26 +67,26 @@ function TrackUserClicks() {
 
 function App() {
   return (
-    <main className="position-relative">
-      <div>
+    <>
+      <main className="">
         <NavBar />
-      </div>
 
-      <div className="main-wrapper">
-        {/* Track page views */}
-        <TrackPageView />
-        <TrackUserClicks />
-        {/* Define routes for the application */}
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/how-we-work" element={<HowWeWork />} />
-        </Routes>
-      </div>
+        <div className="main-wrapper">
+          {/* Track page views */}
+          <TrackPageView />
+          <TrackUserClicks />
+          {/* Define routes for the application */}
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/how-we-work" element={<HowWeWork />} />
+          </Routes>
+        </div>
 
-      <div className="main-wrapper">
-        <Footer />
-      </div>
-    </main>
+        <div className="main-wrapper">
+          <Footer />
+        </div>
+      </main>
+    </>
   );
 }
 

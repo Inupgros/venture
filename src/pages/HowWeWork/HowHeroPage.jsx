@@ -8,7 +8,7 @@ import { TbArrowUpRight } from "react-icons/tb";
 const HowHeroPage = () => {
   return (
     <section className="hero-main">
-      <div className="hero-content-wrappper gap-5">
+      <div className="hero-content-wrappper how-we-p gap-5">
         <div className="hero-content gap-1">
           <h1>
             Your Journey to <br />
@@ -68,7 +68,7 @@ const HowHeroPage = () => {
                 <span>Insurance</span>
               </div>
 
-              <div className="d-flex align-items-center gap-3">
+              <div className="d-flex align-items-center gap-1">
                 <div>
                   <p>
                     <span className="arrow-grow">
@@ -89,7 +89,7 @@ const HowHeroPage = () => {
                 <span>Bonds</span>
               </div>
 
-              <div className="d-flex align-items-center gap-3">
+              <div className="d-flex align-items-center gap-1">
                 <div>
                   <p>
                     <span className="arrow-grow">
@@ -111,7 +111,7 @@ const HowHeroPage = () => {
               </div>
               <div className="stocks3-dash"></div>
 
-              <div className="d-flex align-items-center gap-3">
+              <div className="d-flex align-items-center gap-1">
                 <div className="stock-percentage">
                   <p>
                     <span className="arrow-grow">

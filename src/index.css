@@ -73,6 +73,7 @@ main {
   margin: auto;
   background: #00000059;
   backdrop-filter: blur(104px);
+  overflow: hidden;
 }
 
 /* .nav-wraper {

@@ -1,3 +1,7 @@
+#hero-section {
+  margin-top: 100px;
+}
+
 .hero-main {
   width: 100%;
   height: auto;
@@ -24,7 +28,10 @@
   background-size: contain;
   display: flex;
   align-items: center;
-  padding-top: 47px;
+  padding-top: 100px;
+}
+.hpt {
+  padding-top: 50px;
 }
 
 .hero-content {
@@ -233,12 +240,10 @@
     overflow: hidden;
   }
 
-  .navbar {
-    padding: 10px 0px;
-  }
   .hero-main {
-    padding: 0px 20px;
+    padding: 40px 20px 20px 20px;
   }
+
   .hero-content h1 {
     font-size: 3rem;
   }
@@ -266,6 +271,10 @@
 
 /* Max width 768px */
 @media (max-width: 768px) {
+  .hero-main {
+    padding: 20px;
+  }
+
   .hero-content-wrappper {
     padding: 20px 10px;
   }
@@ -294,7 +303,7 @@
 /* Max width 425px */
 @media (max-width: 425px) {
   .hero-main {
-    padding: 0px 20px;
+    padding: 20px;
   }
 
   .hero-content-wrappper {

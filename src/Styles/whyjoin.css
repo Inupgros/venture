@@ -35,7 +35,7 @@
 
 .why-hero {
   width: 600.16px;
-  height: 739.86px;
+  height: 700px;
   position: relative;
 }
 .why-hero-img {
@@ -158,12 +158,10 @@
   color: #101828;
   font-size: 16px;
   font-weight: 600;
+
+  padding: 10px 15px;
+  border-radius: 50px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 4px 20px;
-  border-radius: 30px;
 }
 
 /* Why Join US */
@@ -196,7 +194,7 @@
 
 @media (max-width: 1024px) {
   .why-wrapper {
-    padding: 40px 20px 10px 20px;
+    padding: 40px 20px 40px 20px;
     gap: 10px;
   }
 
@@ -320,5 +318,14 @@
   .invest-aford1 {
     width: 429px;
     height: 386px;
+  }
+
+  .custom-tag {
+    gap: 4px;
+    padding: 10px 8px;
+  }
+
+  .custom-tag span {
+    font-size: 12px;
   }
 }

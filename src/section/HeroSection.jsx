@@ -70,7 +70,7 @@ const HeroSection = () => {
 
   return (
     <section className="hero-main">
-      <div className="hero-content-wrappper">
+      <div className="hero-content-wrappper hpt">
         <div className="hero-content">
           <h1>
             Your Personal <br />

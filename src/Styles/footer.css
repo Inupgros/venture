@@ -26,6 +26,11 @@
   );
 }
 
+.flogo {
+  width: 230px;
+  height: 100px;
+}
+
 /* .footer:after {
   content: "";
   position: absolute;
@@ -54,7 +59,9 @@
   list-style-type: none;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
+  gap: 24px;
 }
 
 .footer .nav-links li {
@@ -84,15 +91,28 @@
 /* Responsive */
 @media (max-width: 1024px) {
   .footer {
-    padding: 10px 10px;
+    padding: 20px 20px;
     gap: 0px;
-  }
-
-  .footer .nav-links {
-    flex-direction: column;
   }
 
   .footer .nav-links li {
     margin: 10px 0;
+  }
+}
+@media (max-width: 425px) {
+  .footer {
+    padding: 20px 20px;
+    gap: 0px;
+    align-items: flex-start;
+  }
+
+  .footer .nav-links {
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 20px;
+    padding: 0px;
+  }
+  .footer .nav-links li {
+    margin: 0px 0px;
   }
 }
