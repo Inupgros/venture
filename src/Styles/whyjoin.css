@@ -64,7 +64,7 @@
 .why-list-items {
   width: 562px;
   height: auto;
-  padding: 24px 24px 24px 36px;
+  padding: 24px;
   cursor: pointer;
 }
 
@@ -75,7 +75,7 @@
 .why-active-list {
   width: 562px;
   height: 100%;
-  padding: 24px 24px 24px 36px;
+  padding: 24px;
   background-color: #2389e7;
   border-left: 4px solid #2389e7;
   color: #ffffff !important;

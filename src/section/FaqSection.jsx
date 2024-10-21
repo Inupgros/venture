@@ -169,7 +169,7 @@ const FaqSection = () => {
             <div className="d-flex flex-column gap-1">
               <h5>Send Us An Email</h5>
               <p>Get in touch with our expert for detailed guidance.</p>
-              <span>info@venture.com</span>
+              <span>info@venture.org.in</span>
             </div>
           </div>
         </div>
