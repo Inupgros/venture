@@ -145,7 +145,7 @@ const HeroSection = () => {
             <span>
               <BsCurrencyRupee></BsCurrencyRupee>
             </span>
-            <p>Invest In the Future With FinAdvisor</p>
+            <p>Invest In the Future With Venture</p>
           </div>
           <div className="stats-total-profit">
             <span>

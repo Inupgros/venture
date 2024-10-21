@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import "../Styles/navbar.css";
-import { Link } from "react-router-dom";
+
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
-
+import { Link, useNavigate } from "react-router-dom";
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const navigate = useNavigate();
 
   const handleShowMenu = () => {
     setShowMenu(!showMenu);
@@ -17,25 +18,27 @@ const NavBar = () => {
     setActive(act);
     setShowMenu(false);
 
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
+    // Navigate to the home page first, and then scroll to the section
+    navigate("/");
+
+    // Scroll after a slight delay to ensure page loads
+    setTimeout(() => {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100); // Adjust the delay as necessary
   };
 
   return (
-    <nav class="navbara">
+    <nav className="navbara">
       <div className="logo-wrap">
-        <Link class="logo" to="/">
-          <img src="\Images\Comlogo-removebg-preview.png" alt="Logo" />
+        <Link className="logo" to="/">
+          <img src="/Images/Comlogo-removebg-preview.png" alt="Logo" />
         </Link>
 
         <div className="hamburger" onClick={() => handleShowMenu()}>
-          {!showMenu ? (
-            <GiHamburgerMenu></GiHamburgerMenu>
-          ) : (
-            <RxCross2></RxCross2>
-          )}
+          {!showMenu ? <GiHamburgerMenu /> : <RxCross2 />}
         </div>
       </div>
 
@@ -60,6 +63,7 @@ const NavBar = () => {
         </li>
         <li>
           <Link
+            to="/"
             className={active === "Work" ? "active" : ""}
             onClick={() => handleActive("Work", "assest-section")}
           >
@@ -86,9 +90,9 @@ const NavBar = () => {
         </li>
         <div className="nav-btns">
           <Link className="how-use-btn" to="/how-we-work">
-            How to use{" "}
+            How to use
           </Link>
-          <Link class="contact-btn">Contact Us</Link>
+          <Link className="contact-btn">Contact Us</Link>
         </div>
       </ul>
     </nav>

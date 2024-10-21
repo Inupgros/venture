@@ -21,12 +21,6 @@ const HowHeroPage = () => {
           </p>
           <div className="hero-buttons">
             <button className=" get-started">Get Started</button>
-            <Link className="learn-more">
-              Learn More{" "}
-              <span>
-                <MdKeyboardArrowRight></MdKeyboardArrowRight>
-              </span>
-            </Link>
           </div>
         </div>
 
@@ -48,8 +42,7 @@ const HowHeroPage = () => {
             </div>
             <div className="web-view-navbar">
               <div className="nav-logo">
-                <img src=" \Images\logo.png" alt="" />
-                <span>FINDADVISOR</span>
+                <img src=" \Images\Comlogo-removebg-preview.png" alt="" />
               </div>
               <div className="nav-dash">
                 <div className="dash dash1"></div>

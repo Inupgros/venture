@@ -2,6 +2,8 @@ import React from "react";
 import "../Styles/footer.css";
 import { Link } from "react-router-dom";
 
+const year = new Date().getFullYear();
+
 const Footer = () => {
   return (
     <footer class="footer">
@@ -32,7 +34,7 @@ const Footer = () => {
       </ul>
 
       <div class="copyright">
-        Copyright &copy; 2024 Finadvisors | All Right Reserved
+        Copyright &copy; {year} Venture | All Right Reserved
       </div>
     </footer>
   );

@@ -108,45 +108,56 @@ const FaqSection = () => {
         <div className="faq-accordion">
           <div className="faq-item" onClick={() => toggleFaq(0)}>
             <h3>
-              How to buy a subscription at FINADVISORS{" "}
+              What is a virtual investment advisor?
               {faqIndex === 0 ? <span>x</span> : <span>+</span>}
             </h3>
             {faqIndex === 0 && (
               <p>
-                You just need to find the music event you want, order the
-                ticket, and ensure it's still available. After paying with your
-                credit card, the ticket will be emailed automatically.
+                A virtual investment advisor provides automated, affordable, and
+                personalized investment advice, similar to traditional financial
+                advisors, but through an online platform.
               </p>
             )}
           </div>
 
           <div className="faq-item" onClick={() => toggleFaq(1)}>
             <h3>
-              Where will I get the Advisory{" "}
+              How does this platform work?
               {faqIndex === 1 ? <span>x</span> : <span>+</span>}
             </h3>
             {faqIndex === 1 && (
-              <p>Advisory will be delivered to your registered email.</p>
+              <p>
+                Users answer a few questions about their financial goals, risk
+                tolerance, and timeline. Based on that, the system suggests
+                personalized investment options.
+              </p>
             )}
           </div>
 
           <div className="faq-item" onClick={() => toggleFaq(2)}>
             <h3>
-              How to claim refund if I don't want subscription{" "}
+              What kind of advice can I expect?
               {faqIndex === 2 ? <span>x</span> : <span>+</span>}
             </h3>
             {faqIndex === 2 && (
-              <p>You can request a refund by contacting support.</p>
+              <p>
+                We provide guidance on asset allocation, portfolio building,
+                rebalancing strategies, and goal-based planning (e.g.,
+                retirement, education, wealth creation).
+              </p>
             )}
           </div>
 
           <div className="faq-item" onClick={() => toggleFaq(3)}>
             <h3>
-              Will I get updates on the Stock portfolio{" "}
+              Can I track my progress on the platform?
               {faqIndex === 3 ? <span>x</span> : <span>+</span>}
             </h3>
             {faqIndex === 3 && (
-              <p>Yes, you will receive regular updates via email.</p>
+              <p>
+                Yes, you can track the performance of your advised portfolio and
+                receive rebalancing suggestions when needed.
+              </p>
             )}
           </div>
         </div>
