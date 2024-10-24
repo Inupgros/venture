@@ -124,7 +124,7 @@ const HowHeroPage = () => {
               {" "}
               <div className="d-flex align-items-center">
                 <img src=" \Images\Icon5.png" alt="" />
-                <span>Invest In the Future With FinAdvisor</span>
+                <span>Invest In the Future With Venture</span>
               </div>
             </div>
             <div className="web-view-stocks5">
